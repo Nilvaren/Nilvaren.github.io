@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Terin</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+<canvas id="canvas"></canvas>
+<canvas id="canvasOver"></canvas>
+<div align="center" id="topBar">
+	<div>
+		Controls<div class="help">How To Use ?<span class="detail">Left Mouse : Set Item (Ex: Wall)<br>Right Mouse : Delete Item</span></div><br>
+		<button id="startAstar">Start</button>
+		<button id="step">Step</button>
+		<button id="clearWall">Clear Walls</button>
+		<button id="clear">Clear</button>
+	</div>
+	<div id="selectAlgo">
+		Algorithm<div class="help">?<span class="detail">Change Combo Box To Change The Algorithm<br>Check 'Allow Diagonal' To Allow Diagonal Movement</span></div><br>
+		<select id="algo">
+			<option value="0">Dijkstra</option>
+			<option value="1" selected>Astar</option>
+		</select>
+		<label><input type="checkbox" id="diagonalCheck">Allow Diagonal</label>
+	</div>
+	<div id="itemSelect">
+		Current Item<div class="help">?<span class="detail">Change Combo Box To Change The Current Item<br>Eraser : Erase Any Item<br>Wall : Make Obstacle (Wall)<br>Start : Make Staring Point (Max 1)<br>End : Make Target/End Point (Max 1)</span></div><br>
+		<select name="item" id="select">
+			<option value="0">Eraser</option>
+			<option value="1">Start</option>
+			<option value="2">End</option>
+			<option value="3" selected>Wall</option>
+		</select>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
